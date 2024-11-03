@@ -5,6 +5,7 @@ import csv
 
 def detail_page(_page_links, _headers):
     for _page in _page_links:
+        title = ""
         try:
             _url = _page['href']
             _response = requests.get(_url, headers=_headers)
